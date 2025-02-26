@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "s26yHlGeVIw=",
+  "dgSpecHash": "9xL6oPc57x0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\FIC\\source\\repos\\MnemosyneAPI\\MnemosyneAPI.csproj",
+  "projectFilePath": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\MnemosyneAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\FIC\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\FIC\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\FIC\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\FIC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\FIC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\FIC\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
