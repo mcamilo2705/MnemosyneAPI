@@ -2,6 +2,9 @@
 using Microsoft.VisualBasic;
 using MnemosyneAPI.Context;
 using MnemosyneAPI.Model;
+using FluentValidation;
+using MnemosyneAPI.Validators;
+using System.ComponentModel.DataAnnotations;
 
 namespace MnemosyneAPI.Endpoint
 {
@@ -31,11 +34,16 @@ namespace MnemosyneAPI.Endpoint
 
 
             //Criar memories
-            app.MapPost("/memories", async (Memory memory, MemoryDbContext db) =>
+            app.MapPost("/memories", async (Memory memory, IValidator<Memory> validator, MemoryDbContext db) =>
             {
+
                 //verificando se a criacao esta nulla
                 if (memory == null) return Results.BadRequest("Requisicao invalida");
-                
+
+                var validation = await validator.ValidateAsync(memory);
+
+                if (!validation.IsValid) return Results.ValidationProblem(validation.ToDictionary());
+
                 db.Memories.Add(memory);
                 //para salvar a memories
                 await db.SaveChangesAsync();
@@ -47,16 +55,20 @@ namespace MnemosyneAPI.Endpoint
                 ;
 
             //Atualizar memories
-            app.MapPut("/memories/{id}", async (int id, Memory memory, MemoryDbContext db) =>
+            app.MapPut("/memories/{id}", async (int id, Memory memory, IValidator<Memory> validator, MemoryDbContext db) =>
             {
-                var memoriesEncontrada = await db.Memories.FindAsync(id);
+                var foundMemory = await db.Memories.FindAsync(id);
 
-                if (memoriesEncontrada is null) return Results.NotFound();
+                if (foundMemory is null) return Results.NotFound();
 
-                memoriesEncontrada.Title = memory.Title;
-                memoriesEncontrada.Description = memory.Description;
-                memoriesEncontrada.Date = memory.Date;
-                memoriesEncontrada.Images = memory.Images;
+                var validation = await validator.ValidateAsync(memory);
+
+                if (!validation.IsValid) return Results.ValidationProblem(validation.ToDictionary());
+
+                foundMemory.Title = memory.Title;
+                foundMemory.Description = memory.Description;
+                foundMemory.Date = memory.Date;
+                foundMemory.Images = memory.Images;
                 await db.SaveChangesAsync();
 
                 //return Results.Ok(memoriesEncontrada);

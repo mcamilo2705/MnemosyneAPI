@@ -1,10 +1,19 @@
 using System.Reflection;
+using FluentValidation;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using MnemosyneAPI.Context;
 using MnemosyneAPI.Endpoint;
+using MnemosyneAPI.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+//builder.WebHost.UseUrls($"http://*:{port}");
+
+builder.Services.AddHealthChecks();
+
+builder.Services.AddValidatorsFromAssemblyContaining<MemoryValidator>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>

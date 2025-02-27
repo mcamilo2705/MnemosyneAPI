@@ -314,3 +314,6 @@ C:\Users\FIC\Downloads\MnemosyneAPI\obj\Debug\net9.0\staticwebassets.upToDateChe
 C:\Users\FIC\Downloads\MnemosyneAPI\obj\Debug\net9.0\Mnemosyn.D74AB41E.Up2Date
 C:\Users\FIC\Downloads\MnemosyneAPI\obj\Debug\net9.0\MnemosyneAPI.genruntimeconfig.cache
 C:\Users\FIC\Downloads\MnemosyneAPI\obj\Debug\net9.0\ref\MnemosyneAPI.dll
+C:\Users\FIC\Downloads\MnemosyneAPI\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\FIC\Downloads\MnemosyneAPI\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+C:\Users\FIC\Downloads\MnemosyneAPI\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll

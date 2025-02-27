@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3D8C2B7-F11A-4569-A12F-2F4AC6BC9328}|MnemosyneAPI.csproj|c:\\users\\fic\\downloads\\mnemosyneapi\\validators\\memoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3D8C2B7-F11A-4569-A12F-2F4AC6BC9328}|MnemosyneAPI.csproj|solutionrelative:validators\\memoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B3D8C2B7-F11A-4569-A12F-2F4AC6BC9328}|MnemosyneAPI.csproj|c:\\users\\fic\\downloads\\mnemosyneapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3D8C2B7-F11A-4569-A12F-2F4AC6BC9328}|MnemosyneAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3D8C2B7-F11A-4569-A12F-2F4AC6BC9328}|MnemosyneAPI.csproj|c:\\users\\fic\\downloads\\mnemosyneapi\\endpoint\\memoryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3D8C2B7-F11A-4569-A12F-2F4AC6BC9328}|MnemosyneAPI.csproj|solutionrelative:endpoint\\memoryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3D8C2B7-F11A-4569-A12F-2F4AC6BC9328}|MnemosyneAPI.csproj|c:\\users\\fic\\downloads\\mnemosyneapi\\validators\\memoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3D8C2B7-F11A-4569-A12F-2F4AC6BC9328}|MnemosyneAPI.csproj|solutionrelative:validators\\memoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3D8C2B7-F11A-4569-A12F-2F4AC6BC9328}|MnemosyneAPI.csproj|c:\\users\\fic\\downloads\\mnemosyneapi\\model\\memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,17 +30,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "MemoryEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\Endpoint\\MemoryEndpoints.cs",
+              "RelativeDocumentMoniker": "Endpoint\\MemoryEndpoints.cs",
+              "ToolTip": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\Endpoint\\MemoryEndpoints.cs",
+              "RelativeToolTip": "Endpoint\\MemoryEndpoints.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwEUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T00:54:53.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MemoryValidator.cs",
               "DocumentMoniker": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\Validators\\MemoryValidator.cs",
               "RelativeDocumentMoniker": "Validators\\MemoryValidator.cs",
               "ToolTip": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\Validators\\MemoryValidator.cs",
               "RelativeToolTip": "Validators\\MemoryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T00:50:04.883Z",
               "EditorCaption": ""
@@ -55,21 +68,7 @@
               "RelativeToolTip": "Model\\Memory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T22:30:21.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MemoryEndpoints.cs",
-              "DocumentMoniker": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\Endpoint\\MemoryEndpoints.cs",
-              "RelativeDocumentMoniker": "Endpoint\\MemoryEndpoints.cs",
-              "ToolTip": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\Endpoint\\MemoryEndpoints.cs",
-              "RelativeToolTip": "Endpoint\\MemoryEndpoints.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwEsAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T00:54:53.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T22:30:21.423Z"
             },
             {
               "$type": "Document",
@@ -81,18 +80,17 @@
               "RelativeToolTip": "Context\\MemoryDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T22:47:05.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T22:47:05.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\FIC\\Downloads\\MnemosyneAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T00:14:11.029Z",
               "EditorCaption": ""

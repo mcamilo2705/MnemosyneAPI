@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MnemosyneAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92e9927638fd8abb3a2f452d7898b2fb85d2d598")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6e449d3b94fe2ca35d1dca96e9b4d40e9b52dc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MnemosyneAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MnemosyneAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
