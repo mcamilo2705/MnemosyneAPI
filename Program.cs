@@ -13,6 +13,22 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHealthChecks();
 
+//inicio para configurar do cors
+var MinhasOrigens = "_minhasOrigens";
+
+builder.Services.AddCors(
+    options => {
+        options.AddPolicy(
+            name: MinhasOrigens,
+            policy => {
+                policy.WithOrigins("http://localhost:5173");
+            }
+        );
+    }
+);
+
+//fim de configuracao do cors
+
 builder.Services.AddValidatorsFromAssemblyContaining<MemoryValidator>();
 
 builder.Services.AddEndpointsApiExplorer();
@@ -46,5 +62,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapMemoriesEndpoints();
+
+app.UseCors();
 
 app.Run();
