@@ -34,6 +34,8 @@ builder.Services.AddSqlite<MemoryDbContext>(stringConexao);
 
 var app = builder.Build();
 
+app.UseHealthChecks("/health");
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
